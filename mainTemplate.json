@@ -22,6 +22,7 @@
            "westcentralus",
            "westeurope"
         ],
+        "defaultValue": "eastus",
         "metadata":{
            "description":"The location of AKS resource."
         }
