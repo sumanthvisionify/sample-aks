@@ -16,16 +16,11 @@
         }
      },
      "location":{
-        "type":"String",
-        "allowedValues":[
-           "eastus",
-           "westcentralus",
-           "westeurope"
-        ],
-        "defaultValue": "eastus",
-        "metadata":{
-           "description":"The location of AKS resource."
-        }
+      "type":"String",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata":{
+      "description":"The location of AKS resource."
+    }
      },
      "vmSize":{
         "type":"String",
