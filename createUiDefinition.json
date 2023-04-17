@@ -135,7 +135,7 @@
 								"name": "enableAutoScaling",
 								"type": "Microsoft.Common.CheckBox",
 								"label": "Enable auto scaling",
-								"toolTip": "Enable auto scaling"						
+								"toolTip": "Enable auto scaling"		
 							},
 							{
 								"name": "networkPlugin",
@@ -164,7 +164,7 @@
 			}
 		],
 		"outputs": {
-			"location": "[location]",
+			"location": "[location()]",
 			"createNewCluster": "[basics('createNewCluster')]",
 			"clusterResourceName": "[if(basics('createNewCluster'), steps('clusterDetails').newClusterSection.newClusterResourceName, steps('clusterDetails').existingClusterSection.existingClusterResourceName)]",
 			"kubernetesVersion": "[steps('clusterDetails').newClusterSection.kubernetesVersion]",
